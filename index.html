@@ -3,12 +3,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>শ্রী শ্রী হরিলীলামৃত</title><meta name="theme-color" content="#8b2316">
 <link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icon-192.png"><link rel="apple-touch-icon" href="icon-192.png">
+<style>@font-face{font-family:"SutonnyOMJ";src:url("SutonnyOMJ.ttf") format("truetype");font-display:swap}</style>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@400;600;700&family=Tiro+Bangla&display=swap">
 <style>
 :root{--paper:#e9d6ac;--ink:#2a1b0e;--sin:#8b2316;--fs:1.18rem;--hh:3.4rem;
 --soft:color-mix(in srgb,var(--ink) 62%,var(--paper));--rule:color-mix(in srgb,var(--ink) 32%,var(--paper));--saf:color-mix(in srgb,var(--sin) 55%,#e09a2e);--hit:color-mix(in srgb,var(--sin) 30%,var(--paper));
 --tex:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2' seed='4'/><feColorMatrix values='0 0 0 0 .35 0 0 0 0 .22 0 0 0 0 .08 0 0 0 .12 0'/></filter><rect width='160' height='160' filter='url(%23n)'/></svg>");
---ff:'Noto Serif Bengali','Kalpurush','SolaimanLipi','Vrinda',serif;--fd:'Tiro Bangla','Noto Serif Bengali',serif;
+--ff:'SutonnyOMJ','Noto Serif Bengali','Kalpurush','SolaimanLipi','Vrinda',serif;--fd:'Tiro Bangla','Noto Serif Bengali',serif;
 box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 html{height:100%;scroll-padding-top:calc(env(safe-area-inset-top,0px) + var(--hh) + .3rem)}*{box-sizing:border-box}
 body{margin:0;min-height:100%;color:var(--ink);font:var(--fs)/1.9 var(--ff);background:radial-gradient(ellipse at 50% 35%,transparent 45%,rgba(0,0,0,.28)),color-mix(in srgb,var(--paper) 82%,#000)}
@@ -143,5 +144,6 @@ addEventListener('hashchange',route);
 addEventListener('keydown',e=>{if(!$('#bk'))return;if(['ArrowRight','PageDown',' '].includes(e.key)){e.preventDefault();flip(1)}if(['ArrowLeft','PageUp'].includes(e.key))flip(-1)});
 let rt;addEventListener('resize',()=>{clearTimeout(rt);rt=setTimeout(relayout,300)});
 let tm;addEventListener('scroll',()=>{if(mode!=='scroll'||!/^#c\d+/.test(location.hash))return;clearTimeout(tm);tm=setTimeout(()=>{const e=document.elementFromPoint(innerWidth/2,90),v=e&&e.closest&&e.closest('.v');if(v)S.s('last',{c:cc,k:v.id.slice(1)})},400)},{passive:true});
+if(document.fonts){document.fonts.ready.then(()=>relayout());if(document.fonts.addEventListener)document.fonts.addEventListener('loadingdone',()=>{if(!busy)relayout()})}
 route();
 </script></body></html>
