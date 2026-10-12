@@ -1,12 +1,28 @@
 {
+ "id": "/",
  "name": "শ্রী শ্রী হরিলীলামৃত",
  "short_name": "হরিলীলামৃত",
+ "description": "কবি রসরাজ তারকচন্দ্র সরকার প্রণীত মহাগ্রন্থ শ্রী শ্রী হরিলীলামৃতের ডিজিটাল সংস্করণ: বই ও স্ক্রল পাঠ, সূচিপত্র, খোঁজা, থিম ও অফলাইন পাঠ।",
  "lang": "bn",
+ "dir": "ltr",
  "start_url": "./",
  "scope": "./",
  "display": "standalone",
+ "display_override": [
+  "standalone",
+  "minimal-ui"
+ ],
+ "orientation": "any",
  "background_color": "#e9d6ac",
  "theme_color": "#8b2316",
+ "categories": [
+  "books",
+  "education"
+ ],
+ "prefer_related_applications": false,
+ "launch_handler": {
+  "client_mode": "navigate-existing"
+ },
  "icons": [
   {
    "src": "icon-192.png",
@@ -19,6 +35,50 @@
    "sizes": "512x512",
    "type": "image/png",
    "purpose": "any"
+  },
+  {
+   "src": "icon-maskable-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "maskable"
+  }
+ ],
+ "shortcuts": [
+  {
+   "name": "সূচিপত্র",
+   "short_name": "সূচিপত্র",
+   "url": "./#t",
+   "icons": [
+    {
+     "src": "icon-192.png",
+     "sizes": "192x192",
+     "type": "image/png"
+    }
+   ]
+  },
+  {
+   "name": "খুঁজুন",
+   "short_name": "খুঁজুন",
+   "url": "./#s",
+   "icons": [
+    {
+     "src": "icon-192.png",
+     "sizes": "192x192",
+     "type": "image/png"
+    }
+   ]
+  },
+  {
+   "name": "ভূমিকা",
+   "short_name": "ভূমিকা",
+   "url": "./#b",
+   "icons": [
+    {
+     "src": "icon-192.png",
+     "sizes": "192x192",
+     "type": "image/png"
+    }
+   ]
   }
  ]
 }
