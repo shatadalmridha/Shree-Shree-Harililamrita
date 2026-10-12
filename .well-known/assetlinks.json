@@ -1,0 +1,8 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "app.netlify.harililamrita.twa",
+    "sha256_cert_fingerprints": ["B2:13:FE:FF:02:B4:83:B0:C2:59:72:B5:EC:35:9A:A6:B7:64:2E:2E:0F:FD:E6:6F:5A:CE:19:79:C7:A4:C7:20"]
+  }
+}]
