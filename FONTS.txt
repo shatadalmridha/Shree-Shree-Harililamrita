@@ -1,0 +1,2 @@
+SolaimanLipi.ttf: SolaimanLipi, version 2.000, licensed under the SIL Open Font License, Version 1.0 (http://scripts.sil.org/OFL). The font file is included unmodified.
+Tiro Bangla and Noto Serif Bengali (titles / fallback) are loaded from Google Fonts under the SIL Open Font License.
